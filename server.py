@@ -102,18 +102,18 @@ def debug():
     return "".join(result)
 
 if __name__ == '__main__':
-    print("\n🌐 WEBSITE URLs:")
-    print("   • Main Website:      http://localhost:8000")
-    print("   • Atlas Studio:      http://localhost:8000/atlas-studio")
-    print("   • Debug Info:        http://localhost:8000/debug")
-    print("\n📝 File requests will be logged below")
+    print("\n WEBSITE URLS:")
+    print(" · Main Website:    http://localhost:8000")
+    print(" · Atlas Studio:    http://localhost:8000/atlas-studio")
+    print(" · Debug Info:    http://localhost:8000/debug")
+    print("\n File requests will be logged below")
     print("=" * 60)
-    
+
     try:
         app.run(debug=True, port=8000, host='0.0.0.0')
     except Exception as e:
-        print(f"\n❌ Error starting server: {e}")
-        print("\n💡 Troubleshooting:")
-        print("   1. Check if port 8000 is already in use")
-        print("   2. Try: python server.py")
-        print("   3. Make sure Flask is installed: pip install flask")
+        print(f"\n X Error starting server: {e}")
+        print("\n ❌ Troubleshooting:")
+        print("    1. Check if port 8000 is already in use")
+        print("    2. Try: python server.py")
+        print("    3. Make sure Flask is installed: pip install flask")
